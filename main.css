@@ -2,6 +2,21 @@ body {
   background-color: wheat;
 }
 
-.nav {
-  background-color: white;
+.header {
+  text-align: center; /* center the whole nav */
+  margin-bottom: 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: blue;
 }
