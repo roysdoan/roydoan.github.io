@@ -1,0 +1,121 @@
+(Project Development Journal)
+
+Project: Personal portfolio site — `roydoan.github.io`
+Repository: https://github.com/roysdoan/Personal-Website
+Deployed site: https://roysdoan.github.io/Personal-Website/
+
+Overview
+--------
+This journal documents the step-by-step development of a static personal
+portfolio site built with plain HTML, CSS and a small JavaScript file.
+
+Project structure (important files)
+- main.html — page structure, semantic sections and content
+- main.css — styling 
+- main.js — mobile nav toggle and quiz result handling
+- img/ — background and profile images (e.g. background2.avif, profile image)
+- README.md` — run/deploy instructions and notes
+
+
+Session log 
+------------------------------------------------
+
+Session 1 — Setting up
+- Figure out how to set up Git on Visual Studio Code to to make it easier
+to push and pull git, since im already familair with git this is a very easy
+to do 
+- Write a few files to push and pull git and commit the first commit 
+to testing it out
+- The first 2 commit is just me try to get comfortable with git in VS
+
+Session 2 — HTML initial layout
+- Goal: Create a semantic, accessible page structure and a clear hero area.
+
+- Just messing around with texting and formatting and what need to be there,
+I already have a resume so I just Copy/Paste everything on it and make sure
+everything look good on the layout, 
+- Ensure heading/div/p everything format properly. Pretiier is a huge help
+
+Session 3 — HTML cleanup / NavBar
+- Goal: Make the nav accessible and fix malformed HTML.
+
+- Added class/id to the layout to prepare for styling
+- Added a navbar using class material
+- Style a tiny bit of navbar
+
+Session 4 — Style / JavaScript planning
+- Goal: Decide visual system and the minimal JS interactions required.
+
+Planning details:
+- Background: white background, cyan/teal accents
+- Info: card-style white content areas, 
+- Home: Full page with welcome message and profile picture
+- Media: hree breakpoints (1100px, 900px, 720px) to
+convert the hero to a stacked layout and implemented a (outside of class) 
+a hamburger menu on phone users.
+- JS interactions: mobile nav toggle (open/close, using Aria (AI SUGGESTION))
+and a small quiz control that sets a result message when buttons are clicked.
+- Decorative assets: use Font Awesome CDN for the snowflake watermark for
+my liking.
+
+Session 5 — Implementing CSS and JS
+- Goal: Build the visual layout and interactivity from the plan.
+
+CSS:
+- Starting off building navbar with material we already covered in class,
+everything should be easy just mess around with styling. 
+- Research for a feature that i want to implemented using the sidebar button,
+show the navbar in smaller screens. Using 2-3 videos to build the hamburger
+button for navigating navbar, including featur- Build home page with a idea of i want my profile-photo and some text on therees like close after pressing.
+
+- Styled content cards (div-(content)) with whiter rounded corners, and soft shadows.
+JS:
+- Added `DOMContentLoaded` listener to:
+	- header and nav
+	- Close the mobile menu when a nav link is clicked.
+	- Handle quiz button clicks by reading data-answer and writing to #quiz-result.
+	- Verified aria-expanded is updated whenever the menu opens/closes.
+
+Session 6 — Accessibility audit and fixes
+- Goal: Run WAVE/manual checks and fix issues affecting keyboard and
+	assistive-technology users.
+- Ran WAVE and fixed the heading order issue: changed the quiz heading
+from h4 to h3 so no levels are skipped under section headings.
+- Only pass WAVE check, Lighthouse still got a ton of problem or I just
+use it poorly
+	
+
+Session 7 — README, documentation and final polish
+- Goal: Record how to run and deploy the site and document work for graders.
+Wrote README.md with an overview, file list, run instructions
+- Wrote this journal.txt to capture the session log
+- Record a video presentation through OBS and uploaded on Youtube?
+
+
+Summary
+-------------------------------------------------
+ 
+Lessons learned (outside class content)
+- Managing layered backgrounds (gradient + image) for consistent readability.
+- Box shadow, effect through CSS 
+- Importance of updating ARIA state in JS for assistive technologies.
+- Hamburger menu
+
+
+External resources used / references
+- MDN Web Docs — HTML, CSS, ARIA references: https://developer.mozilla.org/
+- W3C ARIA Authoring Practices: https://www.w3.org/TR/wai-aria-practices/
+- Font Awesome (CDN) — decorative icon(s): https://fontawesome.com/
+- WAVE Accessibility Tool: https://wave.webaim.org/
+- Hamburger Tutorial: https://www.youtube.com/watch?v=dAIVbLrAb_U
+
+
+Future Work
+- Update content is the div-content session, right now it kinda shallow
+but meet the requirements
+- Do some more JS stuff, multiple pages could be a good idea
+- Can be used to have a project on my resume
+
+
+
+

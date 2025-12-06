@@ -24,7 +24,7 @@ Files of interest
 
 Deployment
 The site will be available at:
-`https://roysdoan.github.io/`
+`https://roysdoan.github.io/Personal-Website/`
 
 Accessibility notes
 
