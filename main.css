@@ -259,7 +259,6 @@ section {
   border-color: rgba(2, 136, 168, 0.16);
 }
 
-/* Responsive adjustments */
 @media (max-width: 1100px) {
   .hero-inner {
     padding: 4rem 1rem;
