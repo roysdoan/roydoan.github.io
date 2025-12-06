@@ -5,45 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Roy Doan Profile</title>
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="name">Roy Doan</h1>
+      <i class="fa-regular fa-snowflake"></i>
 
-      <nav class="nav">
+      <h1 class="name"><span>Roy Doan</span></h1>
+
+      <nav id="primary-nav" class="nav">
         <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
+      <button
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
     </header>
-    <br />
     <main class="main">
-      <section id="contact" class="section-contact">
-        <h2 class="header-title">CONTACT/SOCIAL</h2>
-        <li>Email: roysdoan@pdx.edu</li>
-        <li>Phone: xxx-xxx-7575</li>
-        <li>Address: Hillsboro, OR</li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/roy-doan-711b15395/"
-            target="_blank"
-            >My Linkedin</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/roysdoan" target="_blank">My Git</a>
-        </li>
+      <section id="home" class="hero">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h2 class="hero-title">Welcome, I'm Roy</h2>
+            <p class="hero-intro">
+              I'm a Computer Science Student at Portland State University —
+              pursuing a BS in Computer Science (expected 12/2026). This is my
+              first web page I created!
+            </p>
+            <a class="btn-contact" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-right">
+            <img class="profile-photo" src="img/roy" alt="Roy Doan" />
+          </div>
+        </div>
       </section>
-      <br />
-      <section id="profile" class="section-profile">
-        <div class="div-profile">
-          <h2 class="header-title">PROFILE</h2>
+      <!-- contact moved to bottom; removed from top -->
+      <section id="about" class="section-about">
+        <div class="div-about">
+          <h2 class="header-title">ABOUT ME</h2>
           <div>
             I am a committed Computer Science student at Portland State
             University (BS, expected 12/2026) and want to participate in
@@ -107,33 +124,108 @@
             </li>
             <li><b>Platform: </b>Linux, Windows</li>
             <li><b>Language: </b> Vietnamese, English</li>
-            <li><b>Interest: </b>Video games, Gym</li>
+            <li><b>Interest: </b>Video games, Gym, SuperHero Movies</li>
           </ul>
         </div>
       </section>
       <section id="projects" class="section-projects">
         <div class="div-projects">
           <h2 class="header-title">PROJECTS</h2>
+          <p>
+            Here are some of my course work personal projects build using C++,
+            Python:
+          </p>
           <ol class="list-projects">
-            <div>
-              <li><b>POKÉMON BATTLE SIMULATOR</b></li>
-              <a href="url">
-                https://gitlab.cecs.pdx.edu/roysdoan/pokemon-stimulation-game
-              </a>
-            </div>
-            <div>
-              <li><b>DISCORD CHAT SIMULATION </b></li>
-              <a href="url"
-                >https://gitlab.cecs.pdx.edu/roysdoan/discord-chat-simulation
-              </a>
-            </div>
-            <div>
-              <li>CHOCAN DATA PROCESSING SYSTEM (IN PROGRESS GROUP PROJECT)</li>
-              <a href="url"
-                >https://github.com/roysdoan/ChoAn-DATA-PROCESSING-SYSTEM
-              </a>
-            </div>
+            <li>
+              <b>POKÉMON BATTLE SIMULATOR</b>
+              <div>
+                A simple text-based Pokémon battle simulator game that allows
+                two players to choose their Pokémon and battle against each
+                other using turn-based mechanics.
+
+                <a
+                  href="https://gitlab.cecs.pdx.edu/roysdoan/pokemon-stimulation-game"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Git</a
+                >
+              </div>
+            </li>
+            <li>
+              <b>DISCORD CHAT SIMULATION</b>
+              <div>
+                A simple basic Discord chat simulation application that allows
+                users to create accounts, join servers, and send messages to
+                each other in real-time.
+                <a
+                  href="https://gitlab.cecs.pdx.edu/roysdoan/discord-chat-simulation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Git</a
+                >
+              </div>
+            </li>
+            <li>
+              <b>CHOCAN DATA PROCESSING SYSTEM (IN PROGRESS GROUP PROJECT)</b>
+              <div>
+                A data processing system for a healthcare provider that manages
+                member and provider information, processes claims, and generates
+                reports using Python and JSON storage.
+                <a
+                  href="https://github.com/roysdoan/ChoAn-DATA-PROCESSING-SYSTEM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Git</a
+                >
+              </div>
+            </li>
           </ol>
+        </div>
+      </section>
+      <!-- bottom section: quiz (left) and contact (right) -->
+      <section class="bottom-section">
+        <div class="bottom-inner">
+          <div class="bottom-left">
+            <section class="quiz-section">
+              <h3>Fun Quiz About Me!</h3>
+              <p>After viewing my profile,</p>
+              <p>Guess my favorite movie:</p>
+              <div class="quiz">
+                <button class="quiz-btn" data-answer="wrong">Anabelle</button>
+                <button class="quiz-btn" data-answer="correct">
+                  Marvels: End Games
+                </button>
+                <button class="quiz-btn" data-answer="wrong">Zootopia 2</button>
+              </div>
+              <p id="quiz-result"></p>
+            </section>
+          </div>
+          <div class="bottom-right">
+            <section id="contact" class="section-contact">
+              <h2 class="header-title">CONTACT / SOCIAL</h2>
+              <ul class="contact-list">
+                <li>Email: roysdoan@pdx.edu</li>
+                <li>Phone: xxx-xxx-7575</li>
+                <li>Address: Hillsboro, OR</li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/roy-doan-711b15395/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >My Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/roysdoan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >My Git</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
     </main>
